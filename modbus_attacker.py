@@ -63,6 +63,8 @@ async def handle_client(client_reader, client_writer):
                             continue
                         else:
                             writer.write(data)
+                    else:
+                        writer.write(data)
             else:
                 writer.write(data)
 
